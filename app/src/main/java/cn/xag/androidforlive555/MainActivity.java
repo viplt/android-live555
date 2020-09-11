@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity{
                 if(!mp3File.getParentFile().exists()){
                     mp3File.getParentFile().mkdirs();
                 }
-                //初始化推流  139.129.118.188  本地安装easyDarwin服务端
+                //初始化推流 本地安装easyDarwin服务端
                 livePush.initPush(v.getContext(), "192.168.3.137", "554", "test.sdp", filePath, new InitCallback() {
                     @Override
                     public void onCallback(String code) {
